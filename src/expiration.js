@@ -47,7 +47,8 @@ function CcExpController ($scope, $element) {
     } else if (!past && !!expMonth && !!expYear) {
       ngModel.month.$setValidity('ccExpMonth', true)
     }
-
+  }
+  
   this.$watch = function $watchExp () {
     $scope.$watch(function watchExp () {
       return {
